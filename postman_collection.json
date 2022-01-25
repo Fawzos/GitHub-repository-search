@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "0e632862-7099-4d69-9875-e3e82e184215",
+		"name": "Github",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Repos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/search/repositories?q=str",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "str"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/search/users?q=3akram",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"users"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "3akram"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Issues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/search/issues?q=he",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"issues"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "he"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "searchText",
+							"value": "strapi",
+							"type": "text"
+						},
+						{
+							"key": "searchType",
+							"value": "repositories",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchText",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/_health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/_health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"_health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/clear-cache",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/clear-cache",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"clear-cache"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "github-repository-search-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "nodemon index.js", 
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "ioredis": "^4.28.3",
+    "joi": "^17.5.0",
+    "nodemon": "^2.0.15",
+    "redis": "^4.0.2"
+  }
+}
